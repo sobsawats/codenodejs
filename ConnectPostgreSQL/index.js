@@ -23,6 +23,7 @@ const pool = new Pool({
         const currentUser = rows[0]['current_user'];
         // console.log(currentUser+" with client");  // postgres        
         console.log(currentUser+" with pool");  // postgres
+        // client.release(true);
     } catch (err) {
         console.log(err);
     } finally {
